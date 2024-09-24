@@ -1,0 +1,1 @@
+void lv_demo_init(void);

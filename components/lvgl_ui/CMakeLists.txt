@@ -1,0 +1,44 @@
+SET(SOURCES screens/ui_Screen1.c
+    screens/ui_Screen2.c
+    screens/ui_Screen3.c
+    screens/ui_Screen4.c
+    screens/ui_Screen5.c
+    screens/ui_Screen6.c
+    ui.c
+    components/ui_comp_hook.c
+    ui_helpers.c
+    images/ui_img_rectangle_1_png.c
+    images/ui_img_1551342831.c
+    images/ui_img_1082659618.c
+    images/ui_img_1472549690.c
+    images/ui_img_tg_logo_rgb_400_png.c
+    images/ui_img_path_3_png.c
+    images/ui_img_1506316136.c
+    images/ui_img_tg_logo_rgb_128_png.c
+    images/ui_img_682500442.c
+    images/ui_img_1095490412.c
+    images/ui_img_2017929843.c
+    images/ui_img_1651982571.c
+    images/ui_img_690220074.c
+    images/ui_img_439061707.c
+    images/ui_img_1118121948.c
+    images/ui_img_1292609536.c
+    images/ui_img_904521578.c
+    images/ui_img_2019467334.c
+    images/ui_img_polygon_1_png.c
+    fonts/ui_font_HEI120x4.c
+    fonts/ui_font_HEI100x4.c
+    fonts/ui_font_HEI18X4.c
+    fonts/ui_font_HEI22x4.c
+    fonts/ui_font_HEI24x4.c
+    fonts/ui_font_HEI26x4.c
+    fonts/ui_font_HEI28x4.c
+    fonts/ui_font_HEI32x4.c
+    fonts/ui_font_HEI45x4.c
+    fonts/ui_font_HEI50x4.c)
+
+
+idf_component_register(
+    SRCS ${SOURCES}
+    REQUIRES lvgl_esp32_drivers peripheral storage my_lvgl
+    INCLUDE_DIRS "/")
